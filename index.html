@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김하연의 자기소개서</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            overflow: hidden;
+            position: relative;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .profile-pic {
+            float: right;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-left: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .personal-info p {
+            margin: 5px 0;
+        }
+        .star {
+            width: 5px;
+            height: 5px;
+            background: white;
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>김하연의 자기소개서</h1>
+        <img src="https://images.unsplash.com/photo-1592194996308-7f3f98136143?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=80" alt="Profile Picture" class="profile-pic">
+        
+        <div class="section personal-info">
+            <h2>개인 정보</h2>
+            <p><strong>이름:</strong> 김하연</p>
+            <p><strong>나이:</strong> 17살</p>
+            <p><strong>MBTI:</strong> ENFP</p>
+        </div>
+
+        <div class="section hobbies">
+            <h2>취미</h2>
+            <p>노래 듣기</p>
+            <p>여행 가기</p>
+        </div>
+
+        <div class="section introduction">
+            <h2>자기소개</h2>
+            <p>안녕하세요, 저는 김하연입니다. 17살이며, MBTI는 ENFP입니다. 저는 노래 듣는 것을 좋아하고, 새로운 곳으로 여행 가는 것을 즐깁니다. 활발하고 에너지 넘치는 성격으로, 사람들과의 소통을 중요하게 생각합니다. 항상 새로운 경험을 쌓고, 다양한 사람들과의 만남을 통해 성장해 나가고자 합니다.</p>
+        </div>
+    </div>
+
+    <!-- 별들을 배치할 스크립트 -->
+    <script>
+        const body = document.body;
+        for (let i = 0; i < 100; i++) { // 원하는 만큼 별의 개수를 조정
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = Math.random() * window.innerHeight + 'px';
+            star.style.left = Math.random() * window.innerWidth + 'px';
+            body.appendChild(star);
+        }
+    </script>
+</body>
+</html>
